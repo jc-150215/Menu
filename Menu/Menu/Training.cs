@@ -8,16 +8,17 @@ namespace Menu
 {
     public class Training
     {
-        private String Menu;
 
         public string Menu { get; set; }
         public string Load { get; set; }
+        public string parts { get; set; }
 
-        public Stirng getMenu()
+        public string getMenu()
         {
             return Menu;
         }
 
+        
         public override string ToString()
         {
             return Menu + "                                                                                負荷度：" +Load;
