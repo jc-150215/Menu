@@ -40,6 +40,7 @@ namespace Menu
             await itemDataBase.InsertItemAsync(pushup);
             await itemDataBase.InsertItemAsync(new Training() { Menu = "腹筋", Load = "☆☆☆", parts = "腹" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドレイズ", Load = "☆", parts = "肩" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールクランチ", Load = "☆☆", parts = "腹" });
         }
 
         //SearchBarを押した時のイベントハンドラ
