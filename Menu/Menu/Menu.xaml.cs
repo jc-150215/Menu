@@ -59,7 +59,19 @@ namespace Menu
             await itemDataBase.InsertItemAsync(new Training() { Menu = "プリーチャーカール", Load = "☆☆", parts = "腕" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ケーブルプレス（マシン）", Load = "☆☆", parts = "腕" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ライイング　トライセプス　エクステンション（バーベル）", Load = "☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "アームカール（マシン）", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントオーバーロウ", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントバックエクステンション", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "懸垂（マシン）", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ワンハンドローイング（ダンベル）", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "スペインヒップリフト", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルロウ", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルアップライトロー（ダンベル）", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "シーテッドローイング", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "デッドリフト", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ラットブルダウン", Load = "☆☆", parts = "背中" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ディップス", Load = "☆☆", parts = "肩" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントオーバーロウ", Load = "☆☆", parts = "背中" });
+
         }
 
         //SearchBarを押した時のイベントハンドラ
