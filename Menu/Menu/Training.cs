@@ -22,14 +22,8 @@ namespace Menu
         public override string ToString()
         {
             if (Menu.Length < 27)
-            {
-                var zero = "";
-                for (var i = 0; i < Menu.Length - 27; i++)
-                {
-                    zero += zero;
-                }
-                return Menu + zero + "                                                   " + Load;
-
+            { 
+                return String.Format("%27s", Menu) + "                                                   " + Load;
             }
 
             else
