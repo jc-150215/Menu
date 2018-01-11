@@ -23,7 +23,7 @@ namespace Menu
         {
             if (Menu.Length < 27)
             {
-                String Me = String.Format("{ 0,27}",Menu);
+                String Me = String.Format("%27s",Menu);
                 return Me + "" + Load;
             }
             else
