@@ -21,6 +21,10 @@ namespace Menu
         
         public override string ToString()
         {
+            if (Menu.Equals("アブドミナルマシンクランチ（マシン）"))
+            {
+                return Menu + "                                                                " + Load;
+            }
             if (Menu.Length < 27)
             { 
                 return String.Format("%27s", Menu) + "                                                   " + Load;
