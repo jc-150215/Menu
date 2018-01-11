@@ -12,12 +12,14 @@ namespace Menu
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenudetaliPage : ContentPage
     {
-        public MenudetaliPage(String l)
+        public MenudetaliPage(String l,String m)
         {
             InitializeComponent();
 
 
             Transition.Text = l.Trim();
+
+            Description.Text = m;
         }
 
             /*public MenudetaliPage(String l)

@@ -11,6 +11,14 @@
                    VerticalOptions="StartAndExpand"
                    FontSize="Large"
                    FontAttributes="Bold"/>
+            
+            <Label Text=""
+                   x:Name="Description"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="EndAndExpand"
+                   FontSize="Large"
+                   FontAttributes="Bold"/>
+
 
         </StackLayout>
     </ContentPage.Content>

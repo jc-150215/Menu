@@ -36,59 +36,58 @@ namespace Menu
 
         private static async Task storeInitialData(TrainingDatabase itemDataBase)
         {
-            Training pushup = new Training() { Menu = "アブドミナルマシンクランチ（マシン）", Load = "負荷度:☆☆", parts = "腹" };
+            Training pushup = new Training() { Menu = "アブドミナルマシンクランチ（マシン）", Load = "負荷度:☆☆", parts = "腹", Desc = "" };
             await itemDataBase.InsertItemAsync(pushup);
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ウェィテッドクランチ（プレート）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドレイズ　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆", parts = "肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドバイク（ダンベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルクランチ（ダンベル）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハンギングレッグレイズ（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーティカルベンチレッグレイズ（バーベル）　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "プルアップニーレイズ（マシン）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールクランチ（ボール）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールバイク（ボール）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "メディシンボールロシアンツイスト（ボール）　　　　　　", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "TRX　ニータック（ボール）　　　　　　　　　　　　　　 ", Load = "負荷度:☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "アームカール（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクラインダンベルカール（ダンベル）　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクランダンベルフライ（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ケーブルプレス（マシン）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "コンセントレーションカール（ダンベル）　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルベンチブレス（ダンベル）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "トライセプスキックバック　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ナロウベンチブレス（バーベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "プリーチャーカール　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕" }); 
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ライイング　トライセプス　エクステンション（バーベル）", Load = "負荷度:☆☆", parts = "腕" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "懸垂（マシン）　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "シーテッドローイング　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "スペインヒップリフト　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルアップライトロー（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルロウ　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "デッドリフト　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントオーバーロウ　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントバックエクステンション　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ラットブルダウン　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ワンハンドローイング（ダンベル）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "アーノルドブレス（ダンベル）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクラインベンチプレス（バーベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ケーブルクロスオーバー（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルアップライトロウ（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルフライ（ダンベル）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "チェストブレス（マシン）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ディップス（自重）　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ブルオーバー　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });            
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ペッグデックフライ（マシン）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベンチプレス（バーベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "カーフレイズ（自重）　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルスクワット（ダンベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハックスクワット（マシン）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハックリフト（バーベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーベルスクワット（バーベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーベルランジ（バーベル）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ルーマニアンデッドリフト（バーベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグエクステンション（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグカール（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグプレス（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ウェィテッドクランチ（プレート）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "プレートを頭の後ろに抱え、膝を曲げ首から上がベンチから出るように仰向けに寝ます。腹筋を意識しながら状態を丸めます。腹筋の緊張を解かないままゆっくり上体がつくまでおろす。" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドバイク（ダンベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルクランチ（ダンベル）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハンギングレッグレイズ（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーティカルベンチレッグレイズ（バーベル）　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "プルアップニーレイズ（マシン）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールクランチ（ボール）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールバイク（ボール）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "メディシンボールロシアンツイスト（ボール）　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "TRX　ニータック（ボール）　　　　　　　　　　　　　　 ", Load = "負荷度:☆☆", parts = "腹", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "アームカール（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクラインダンベルカール（ダンベル）　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクランダンベルフライ（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ケーブルプレス（マシン）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "コンセントレーションカール（ダンベル）　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルベンチブレス（ダンベル）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "トライセプスキックバック　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ナロウベンチブレス（バーベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "プリーチャーカール　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腕", Desc = "" }); 
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ライイング　トライセプス　エクステンション（バーベル）", Load = "負荷度:☆☆", parts = "腕", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "懸垂（マシン）　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "シーテッドローイング　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "スペインヒップリフト　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルアップライトロー（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルロウ　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "デッドリフト　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントオーバーロウ　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベントバックエクステンション　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ラットブルダウン　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ワンハンドローイング（ダンベル）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "背中", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "アーノルドブレス（ダンベル）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "インクラインベンチプレス（バーベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ケーブルクロスオーバー（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルアップライトロウ（ダンベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルフライ（ダンベル）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "チェストブレス（マシン）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ディップス（自重）　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ブルオーバー　　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });            
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ペッグデックフライ（マシン）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ベンチプレス（バーベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "胸肩", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "カーフレイズ（自重）　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルスクワット（ダンベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハックスクワット（マシン）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ハックリフト（バーベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーベルスクワット（バーベル）　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "バーベルランジ（バーベル）　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ルーマニアンデッドリフト（バーベル）　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグエクステンション（マシン）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグカール（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "レッグプレス（マシン）　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "脚", Desc = "" });
         }
 
         //SearchBarを押した時のイベントハンドラ
@@ -185,8 +184,8 @@ namespace Menu
 
             Training training = (Training)listView.SelectedItem;
             String l = training.Menu;
-
-            Navigation.PushAsync(new MenudetaliPage(l));
+            String m = training.Desc;
+            Navigation.PushAsync(new MenudetaliPage(l,m));
         }
     }
 }
