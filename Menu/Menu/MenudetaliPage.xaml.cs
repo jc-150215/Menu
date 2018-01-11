@@ -17,7 +17,7 @@ namespace Menu
             InitializeComponent();
 
 
-            Transition.Text = l;
+            Transition.Text = l.Trim();
         }
 
             /*public MenudetaliPage(String l)
