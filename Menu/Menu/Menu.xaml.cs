@@ -48,7 +48,7 @@ namespace Menu
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールクランチ（ボール）", Load = "☆☆", parts = "腹" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ボールバイク（ボール）", Load = "☆☆", parts = "腹" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "メディシンボールロシアンツイスト（ボール）", Load = "☆☆", parts = "腹" });
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "TRX　ニータック（ボール）", Load = "☆☆", parts = "腹" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "TRX ニータック（ボール）", Load = "☆☆", parts = "腹" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "アームカール（マシン）", Load = "☆☆", parts = "腕" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "インクラインダンベルカール（ダンベル）", Load = "☆☆", parts = "腕" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "インクランダンベルフライ（ダンベル）", Load = "☆☆", parts = "腕" });

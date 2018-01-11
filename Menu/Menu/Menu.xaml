@@ -52,8 +52,8 @@
                         Clicked="背中_Clicked"/>
 
 
-                <Button x:Name="胸・肩"
-                        Text="胸・肩"
+                <Button x:Name="胸肩"
+                        Text="胸肩"
                         WidthRequest="70"
                         HeightRequest="15"
                         Clicked="胸肩_Clicked"/>
