@@ -21,8 +21,15 @@ namespace Menu
         
         public override string ToString()
         {
-            return Menu + "                                                   " +Load;
+            if (Menu.Length < 27)
+            {
+                String Me = String.Format("{ 0,27}",Menu);
+                return Me + "" + Load;
+            }
+            else
+            {
+                return Menu + "                                                   " + Load;
+            }
         }
-
     }
 }
