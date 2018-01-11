@@ -23,9 +23,15 @@ namespace Menu
         {
             if (Menu.Length < 27)
             {
-                String Me = String.Format("%27s",Menu);
-                return Me + "" + Load;
+                var zero = "";
+                for (var i = 0; i < Menu.Length - 27; i++)
+                {
+                    zero += zero;
+                }
+                return Menu + zero + "                                                   " + Load;
+
             }
+
             else
             {
                 return Menu + "                                                   " + Load;
