@@ -93,8 +93,9 @@ namespace Menu
         //SearchBarを押した時のイベントハンドラ
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
+            String s = Select.Text;
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
-            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts(Select.Text);
+            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts(s);
 
             listView.ItemsSource = itemList;
 
