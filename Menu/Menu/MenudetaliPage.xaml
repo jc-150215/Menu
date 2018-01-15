@@ -11,13 +11,18 @@
                    VerticalOptions="StartAndExpand"
                    FontSize="Large"
                    FontAttributes="Bold"/>
-            
+
+            <Image Source="image/gym_training2.png"/>
+
             <Label Text=""
                    x:Name="Description"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="EndAndExpand"
                    FontSize="Large"
                    FontAttributes="Bold"/>
+            
+
+            
 
 
         </StackLayout>
