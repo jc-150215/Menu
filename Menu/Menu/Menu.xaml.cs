@@ -94,10 +94,7 @@ namespace Menu
         private void Select_SearchButtonPressed(object sender, EventArgs e)
         {
             String s = Select.Text;
-            TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
-            List<Training> itemList = await itemDataBase.GetItemsAsyncByParts(s);
-
-            listView.ItemsSource = itemList;
+            DisplayAlert("", Select.Text, "OK");
 
             /*if (0<=Select.Text.IndexOf(array1))
             {   
@@ -111,8 +108,9 @@ namespace Menu
 
         private async void 全部_Clicked(object sender, EventArgs e)
         {
+            String s = Select.Text;
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
-            List<Training> itemList = await itemDataBase.GetItemsAsync();
+            List<Training> itemList = await itemDataBase.GetItemsAsync(s);
             listView.ItemsSource = itemList;
 
         }

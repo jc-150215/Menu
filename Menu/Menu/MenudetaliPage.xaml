@@ -12,7 +12,7 @@
                    FontSize="Large"
                    FontAttributes="Bold"/>
 
-            <Image Source="image/gym_training2.png"/>
+            <Image Source="Menu/image/gym_training2.png"/>
 
             <Label Text=""
                    x:Name="Description"
