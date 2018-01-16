@@ -12,7 +12,7 @@
                    FontSize="Large"
                    FontAttributes="Bold"/>
 
-            <Image Source="Menu/image/gym_training2.png"/>
+            <Image Source="https://www.google.co.jp/imgres?imgurl=http%3A%2F%2F1.bp.blogspot.com%2F-fq4u8LcrIsY%2FVkb-_7vYkBI%2FAAAAAAAA0Y8%2F_qoxZJCjX1k%2Fs800%2Fdumbbell_man.png&imgrefurl=http%3A%2F%2Fwww.irasutoya.com%2F2013%2F03%2Fblog-post_9904.html&docid=BzSIN4pKFnQSPM&tbnid=QPsm7MhxecjWrM%3A&vet=10ahUKEwjOoIHqwdvYAhVHOrwKHeZVBi8QMwgnKAAwAA..i&w=757&h=800&bih=923&biw=1279&q=%E7%AD%8B%E3%83%88%E3%83%AC%20%E7%B5%B5&ved=0ahUKEwjOoIHqwdvYAhVHOrwKHeZVBi8QMwgnKAAwAA&iact=mrc&uact=8"/>
 
             <Label Text=""
                    x:Name="Description"

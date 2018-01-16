@@ -108,8 +108,9 @@ namespace Menu
 
         private async void 全部_Clicked(object sender, EventArgs e)
         {
+            String s = Select.Text;
             TrainingDatabase itemDataBase = TrainingDatabase.getDatabase();
-            List<Training> itemList = await itemDataBase.GetItemsAsync();
+            List<Training> itemList = await itemDataBase.GetItemsAsync(s);
             listView.ItemsSource = itemList;
 
         }
